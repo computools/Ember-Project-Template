@@ -15,12 +15,9 @@ export default Ember.Component.extend(
                 else
                     this.set('isOpened', true);
             },
-            closeMobMenu: function (event) {
-                this.set('isOpened', false);
-            },
             pricing: function (event) {
                 this.set("pricingOpened", true);
-                this.closeMobMenu();
+                this.set('isOpened', false);
             }
         },
         scroll: function () {
