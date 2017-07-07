@@ -1,0 +1,25 @@
+<!-- hero header -->
+<section class="hero-header">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 class="hero-title">Hello, world!</h1>
+
+                <p class="hero-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab, ad eligendi error eveniet ipsa iure optio quidem quod repellat sed unde voluptatem voluptatum! Aut consectetur culpa ipsa maxime officia?
+                </p>
+
+                <button class="hero-button" onclick={{action 'learnMore'}}>
+                    Learn More &raquo;
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- hero header end -->
+{{#if learnMoreOpened }}
+    {{learn-more-modal}}
+{{/if}}

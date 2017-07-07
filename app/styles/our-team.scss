@@ -1,0 +1,115 @@
+@import "variables";
+@import "mixin";
+
+.our-team {
+  padding: 120px 0;
+  background: $white;
+  @include tablet {
+    padding: 100px 0 0;
+  }
+
+  .our-team-title {
+    font-size: 64px;
+    color: $mid-gray;
+    text-align: center;
+    @include tablet {
+      font-size: 56px;
+    }
+  }
+
+  .our-team-title-text {
+    max-width: 750px;
+    margin: 0 auto 180px;
+    text-align: center;
+    font-size: 26px;
+    color: $mid-gray;
+    @include tablet {
+      font-size: 22px;
+    }
+    @include mobile {
+      margin: 0 auto 120px;
+    }
+  }
+
+  .photo {
+    position: relative;
+    width: 80%;
+    padding-bottom: 80%;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    @include mobile {
+      width: 60%;
+      padding-bottom: 60%;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+  }
+
+  .name {
+    font-size: 34px;
+    color: $dark-blue;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .position {
+    font-size: 18px;
+    color: $purple;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  .desc {
+    font-size: 22px;
+    color: $mid-gray;
+    text-align: center;
+    margin-bottom: 20px;
+    @include mobile {
+      max-width: 80%;
+      margin: 0 auto 20px;
+    }
+  }
+
+  .social-icons {
+    text-align: center;
+    i {
+      font-size: 30px;
+      color: $dark-blue;
+      margin: 0 10px;
+    }
+    @include tablet {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.icons-line {
+  background: $dark-blue;
+  padding: 40px 0;
+  text-align: center;
+  svg {
+    display: inline-block;
+    line-height: 40px;
+    height: 30px;
+    margin: 0 70px;
+    @include tablet {
+      margin: 0 50px;
+    }
+    @include mobile {
+      margin: 0 20px 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .nike-icon {
+    height: 40px;
+  }
+}

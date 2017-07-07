@@ -1,0 +1,34 @@
+<!-- redefining the web -->
+<section class="redef-the-web">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-sm-6 col-md-5 hidden-xs">
+                <div class="redef-img"></div>
+            </div>
+
+            <div class="col-sm-6">
+                <h2 class="redef-title">Redefine the web</h2>
+
+                <div class="redef-img hidden-sm hidden-md hidden-lg"></div>
+
+                <p class="redef-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae consequatur doloribus ipsum, nesciunt nisi nostrum quis quo voluptates. A ad aspernatur consequuntur dolorum eligendi maxime minima nesciunt, nostrum perspiciatis possimus quae quasi quidem, rerum sed sequi sint tempora ullam?
+                </p>
+
+                <p class="redef-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aliquid animi aut autem deleniti doloribus, dolorum fuga hic ipsam laboriosam minus molestiae natus necessitatibus officiis perspiciatis quisquam quod ratione sapiente tempore ullam. Ad, impedit, veritatis?
+                </p>
+
+                <button class="redef-btn" onclick={{action 'learnMore'}}>Learn-more</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- redefining the web end -->
+
+{{#if learnMoreOpened }}
+    {{learn-more-modal}}
+{{/if}}
+

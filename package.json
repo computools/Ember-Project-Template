@@ -33,6 +33,7 @@
     "ember-export-application-global": "^2.0.0",
     "ember-load-initializers": "^1.0.0",
     "ember-resolver": "^4.0.0",
+    "ember-responds-to": "^1.4.0",
     "ember-source": "~2.13.3",
     "ember-welcome-page": "^3.0.0",
     "loader.js": "^4.2.3"
@@ -40,5 +41,9 @@
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "ember-cli-sass": "^7.0.0"
+  }
 }

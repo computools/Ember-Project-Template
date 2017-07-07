@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixin";
+
+footer {
+  background: $strong-grey;
+  padding: 70px 0 0;
+  @include mobile {
+    padding: 40px 0 0;
+  }
+
+  .footer-title {
+    font-size: 24px;
+    color: $white;
+    @include mobile {
+      //font-size: 22px;
+      text-align: center;
+    }
+  }
+
+  .footer-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 22px;
+    color: #555555;
+    margin-bottom: 30px;
+    @include mobile {
+      //font-size: 18px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  .copy {
+    font-size: 18px;
+    color: #555555;
+  }
+
+  hr {
+    height: 1px;
+    border-top: 1px solid #555555;
+  }
+}

@@ -1,0 +1,83 @@
+@import "_variables";
+@import "_mixin";
+
+
+.contact {
+  padding: 80px 0;
+  background: $dark-grey;
+  @include mobile {
+    padding: 50px 0;
+  }
+  .contact-title {
+    font-size: 64px;
+    color: $white;
+    text-align: center;
+    @include tablet {
+      font-size: 56px;
+    }
+  }
+
+  .contact-title-text {
+    max-width: 750px;
+    margin: 0 auto 60px;
+    text-align: center;
+    font-size: 26px;
+    color: $grey;
+    @include tablet {
+      font-size: 22px;
+    }
+  }
+
+  .contact-form {
+
+    .form-item {
+      position: relative;
+      input,
+      textarea {
+        display: block;
+        width: 100%;
+        background: rgba(123,123,123,0.5);
+        border: none;
+        border-radius: 8px;
+        padding: 0 15px;
+        margin-bottom: 22px;
+        color: $light-grey;
+        font-size: 24px;
+      }
+      input {
+        line-height: 50px;
+      }
+      textarea {
+        padding: 15px;
+      }
+    }
+    .submit-btn {
+      @include btn-outlined($grey);
+      @include mobile {
+        display: block;
+        margin: 0 auto 30px;
+      }
+    }
+  }
+
+  .info-block {
+    @include mobile {
+      margin-bottom: 30px;
+    }
+    .mini-title {
+      font-size: 24px;
+      color: $white;
+    }
+    .mini-content {
+      font-size: 20px;
+      color: $grey;
+    }
+    .social-icons {
+      i {
+        font-size: 30px;
+        margin-right: 10px;
+        color: $grey;
+      }
+    }
+  }
+}

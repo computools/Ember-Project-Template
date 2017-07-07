@@ -1,0 +1,71 @@
+@import "mixin";
+@import "variables";
+
+
+.services {
+  padding: 120px 0 0;
+  background: $dark-grey;
+  @include tablet {
+    padding: 80px 0 0;
+  }
+
+  .service-title {
+    font-size: 64px;
+    color: $white;
+    text-align: center;
+    @include tablet {
+      font-size: 56px;
+    }
+  }
+
+  .service-title-text {
+    max-width: 750px;
+    margin: 0 auto 180px;
+    text-align: center;
+    font-size: 26px;
+    color: $grey;
+
+    @include tablet {
+      margin: 0 auto 120px;
+      font-size: 22px;
+    }
+  }
+
+  .icon {
+    text-align: center;
+    span {
+      font-size: 30px;
+      color: $dark-blue;
+    }
+  }
+
+  .mini-title {
+    font-size: 26px;
+    color: $white;
+    text-align: center;
+    margin: 20px 0;
+    @include tablet {
+      font-size: 22px;
+    }
+    @include mobile {
+      font-size: 26px;
+    }
+  }
+
+  .mini-text {
+    font-size: 22px;
+    text-align: center;
+    color: $grey;
+    margin-bottom: 120px;
+    @include tablet {
+      margin-bottom: 100px;
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 22px;
+      max-width: 80%;
+      margin: 0 auto 100px;
+    }
+  }
+
+}

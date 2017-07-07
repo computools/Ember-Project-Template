@@ -1,0 +1,57 @@
+@import "variables";
+@import "mixin";
+
+.redef-the-web {
+  position: relative;
+  padding: 120px 0;
+  background: $dark-blue;
+  color: $white;
+  box-shadow: inset 0px 5px 15px $strong-blue,
+    inset 0px -5px 15px $strong-blue;
+
+  @include tablet {
+    padding: 80px 0;
+  }
+
+  .redef-img {
+    width: 100%;
+    padding-bottom: 94%;
+    background: url("../images/layers.png") no-repeat center;
+    background-size: contain;
+    @include mobile {
+      width: 60%;
+      padding-bottom: 58%;
+      margin: 0 auto;
+    }
+  }
+
+  .redef-title {
+    margin-top: 0;
+    font-size: 64px;
+    @include tablet {
+      font-size: 56px;
+    }
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  .redef-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+    @include tablet {
+      font-size: 18px;
+    }
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  .redef-btn {
+    @include btn-outlined();
+    @include mobile {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

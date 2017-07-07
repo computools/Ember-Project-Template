@@ -1,0 +1,45 @@
+<nav class="header-navigation {{if isScrolled 'scrolled' }}">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="logo pull-left">
+                <h2>Some Company</h2>
+            </div>
+
+            <div class="menu pull-right">
+                <span class="mob-menu-btn fa fa-bars hidden-md hidden-lg" onclick={{action 'toggleOpening'}}></span>
+                <ul class="menu-items hidden-xs hidden-sm">
+                    <li class="item" onclick={{action 'pricing'}}>Pricing</li>
+                    <li class="item" onclick={{action 'closeMobMenu'}}>About</li>
+                    <li class="item" onclick={{action 'closeMobMenu'}}>Contact</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+<nav class="mobile-nav {{if isOpened 'show'}}">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="menu-mobile hidden-md hidden-lg">
+                <ul class="menu-items">
+                    <li class="item" onclick={{action 'pricing'}}>Pricing</li>
+                    <li class="item" onclick={{action 'closeMobMenu'}}>About</li>
+                    <li class="item" onclick={{action 'closeMobMenu'}}>Contact</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</nav>
+
+{{#if pricingOpened}}
+    {{pricing-modal}}
+{{/if}}
+
+
+
+

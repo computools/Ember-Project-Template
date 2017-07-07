@@ -1,0 +1,46 @@
+@import "variables";
+
+@mixin clearfix () {
+  &:before, &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+@mixin btn-outlined ($color: $white) {
+  font-size: 22px;
+  font-weight: bold;
+  color: $color;
+  height: 62px;
+  padding: 0 25px;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid $color;
+  transition: all 0.3s;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+@mixin laptop {
+  @media screen and (max-width: #{$laptop}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (max-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: #{$mobile}) {
+    @content;
+  }
+}
