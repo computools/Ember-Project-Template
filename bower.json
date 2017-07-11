@@ -1,0 +1,21 @@
+{
+  "name": "ember-test",
+  "description": "Small description for ember-test goes here",
+  "main": "",
+  "authors": [
+    ""
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/computools/ember-test",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}
